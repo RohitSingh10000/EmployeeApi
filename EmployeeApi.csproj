@@ -1,3 +1,4 @@
+
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
@@ -9,6 +10,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.25" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="EmployeeApi.Tests/**/*.cs" />
+    <Content Remove="EmployeeApi.Tests/**" />
+    <None Remove="EmployeeApi.Tests/**" />
   </ItemGroup>
 
 </Project>
